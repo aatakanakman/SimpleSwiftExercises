@@ -16,6 +16,7 @@
 		6D2F29F3267F7DA700406541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2F29F1267F7DA700406541 /* LaunchScreen.storyboard */; };
 		6D2F2A01267F880000406541 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F2A00267F880000406541 /* FeedViewController.swift */; };
 		6D2F2A04267F881D00406541 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F2A03267F881D00406541 /* UploadViewController.swift */; };
+		6DB04DC4267FDCF90076D114 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB04DC3267FDCF90076D114 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6D2F29F4267F7DA700406541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2F2A00267F880000406541 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		6D2F2A03267F881D00406541 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		6DB04DC3267FDCF90076D114 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CA4B0BFFAF3B7E400BD4760B /* Pods_ParseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F4FD731526235997FCED1E /* Pods-ParseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseApp.release.xcconfig"; path = "Target Support Files/Pods-ParseApp/Pods-ParseApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				6D2F29F4267F7DA700406541 /* Info.plist */,
 				6D2F2A00267F880000406541 /* FeedViewController.swift */,
 				6D2F2A03267F881D00406541 /* UploadViewController.swift */,
+				6DB04DC3267FDCF90076D114 /* SettingsViewController.swift */,
 			);
 			path = ParseApp;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				6D2F29E7267F7D9C00406541 /* AppDelegate.swift in Sources */,
 				6D2F2A01267F880000406541 /* FeedViewController.swift in Sources */,
 				6D2F29E9267F7D9C00406541 /* SceneDelegate.swift in Sources */,
+				6DB04DC4267FDCF90076D114 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
