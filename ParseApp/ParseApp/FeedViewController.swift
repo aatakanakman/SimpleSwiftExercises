@@ -11,6 +11,8 @@ import Parse
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     var postArray = [Post]()
@@ -21,14 +23,23 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
+        
+        
         getData()
         
+        
+        
+        
+      
         tableView.allowsSelection = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name(rawValue: "yeniPost"), object: nil)
     }
+    
+    
+  
     
     
     
@@ -91,7 +102,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FeedTableViewCell
         cell.usernameLabel.text = postArray[indexPath.row].username
         cell.commentLabel.text = postArray[indexPath.row].comment
-        
+        cell.activityBar.startAnimating()
         postArray[indexPath.row].image.getDataInBackground { (data, error) in
             
             if error != nil  {
@@ -99,6 +110,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }else{
                 if let data = data {
                     cell.feedImageView.image = UIImage(data: data)
+                    cell.activityBar.stopAnimating()
+                    cell.activityBar.isHidden = true
                 }
             }
             

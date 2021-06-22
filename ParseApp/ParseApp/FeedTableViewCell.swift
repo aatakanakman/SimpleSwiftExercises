@@ -12,6 +12,7 @@ class FeedTableViewCell: UITableViewCell {
     
     
 
+    @IBOutlet weak var activityBar: UIActivityIndicatorView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var feedImageView: UIImageView!
@@ -20,8 +21,11 @@ class FeedTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         
+            
+        
         
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
